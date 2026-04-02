@@ -3322,6 +3322,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1702206299}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed90e1a4d04c24048b63faeb908d56c1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1702206301}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed90e1a4d04c24048b63faeb908d56c1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1702206300}
   m_SourcePrefab: {fileID: 100100000, guid: ed90e1a4d04c24048b63faeb908d56c1, type: 3}
 --- !u!1 &1337610481
 GameObject:
@@ -4331,6 +4339,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerCamera: {fileID: 581459761}
   _cameraFollowPoint: {fileID: 221813032}
+--- !u!114 &1702206300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702206285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5aa8510c798b72419ba171249bea367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freeFallTimeout: 5
+  fallSpeedThreshold: 3
+  gravity: {fileID: 1702206296}
+--- !u!114 &1702206301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702206285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c3a7557f104104eb4a87b7142debc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 1702206297}
 --- !u!1001 &1728094753
 PrefabInstance:
   m_ObjectHideFlags: 0
