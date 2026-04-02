@@ -500,27 +500,27 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_PointAction: {fileID: 8497651984169749264, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_PointAction: {fileID: 8497651984169749264, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_MoveAction: {fileID: -6611024003356003979, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_MoveAction: {fileID: -6611024003356003979, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_SubmitAction: {fileID: 1966000402238396690, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_SubmitAction: {fileID: 1966000402238396690, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_CancelAction: {fileID: -8192558126670970522, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_CancelAction: {fileID: -8192558126670970522, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_LeftClickAction: {fileID: -4173515973285095946, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_LeftClickAction: {fileID: -4173515973285095946, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_MiddleClickAction: {fileID: 311002218543761930, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_MiddleClickAction: {fileID: 311002218543761930, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_RightClickAction: {fileID: 4030765065118760517, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_RightClickAction: {fileID: 4030765065118760517, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_ScrollWheelAction: {fileID: -7041874862152865162, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_ScrollWheelAction: {fileID: -7041874862152865162, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_TrackedDevicePositionAction: {fileID: -3115018321828796539, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_TrackedDevicePositionAction: {fileID: -3115018321828796539, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: -6028590765349192026, guid: 34164d3ab73cde84ba37b3b4f9221835,
+  m_TrackedDeviceOrientationAction: {fileID: -6028590765349192026, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 754127425}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1671,7 +1671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1784258674962e47856864b04ea21ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
 --- !u!65 &568462073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2119,7 +2118,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 754127425}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -2447,6 +2446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 754127424}
+  - component: {fileID: 754127425}
   m_Layer: 0
   m_Name: GameManger
   m_TagString: Untagged
@@ -2469,6 +2469,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &754127425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754127422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3749319f2c8604fa8b8d1af92bcea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 120
+  totalCubes: 0
+  cubePrefab: {fileID: 77678591456427647, guid: 14528a0c0863532428dfefbb8bb06528,
+    type: 3}
+  spawnPoints:
+  - {fileID: 1655635505}
+  - {fileID: 207349893}
+  - {fileID: 1011980372}
+  - {fileID: 411676473}
+  - {fileID: 1043989540}
+  - {fileID: 584211713}
+  - {fileID: 1790560419}
+  - {fileID: 1386123622}
+  - {fileID: 1841183041}
+  - {fileID: 49896287}
+  totalCubesToCollect: 5
+  timerText: {fileID: 2088748118}
+  cubeText: {fileID: 155671804}
+  startMenuPanel: {fileID: 1337610481}
+  gameUIPanel: {fileID: 541506339}
+  gameOverPanel: {fileID: 430117267}
+  winPanel: {fileID: 2013109766}
+  resultText: {fileID: 603495916}
 --- !u!1001 &769990290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2718,7 +2753,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 754127425}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
@@ -3446,6 +3481,7 @@ GameObject:
   - component: {fileID: 1358761049}
   - component: {fileID: 1358761052}
   - component: {fileID: 1358761051}
+  - component: {fileID: 1358761053}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -3510,6 +3546,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358761048}
   m_CullTransparentMesh: 1
+--- !u!114 &1358761053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358761048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3523672b86d6ed844a60bd5894e424ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 581459758}
+  pointerRect: {fileID: 1358761049}
+  canvas: {fileID: 541506343}
+  screenEdgeOffset: 60
 --- !u!1 &1386123621
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,7 +3682,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 754127425}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -4003,7 +4055,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 754127425}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -4308,7 +4360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 771451039cc72b748ba51f991d341366,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -4319,7 +4371,143 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1702206297}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a8f07395-c813-42b7-b8f1-5104d0d3275f
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1702206297}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2924f0ed-cfb5-49b7-9815-c31b4b3c25e4
+    m_ActionName: Player/Look[/Mouse/delta,/Touchscreen/delta,/Pen/delta]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1702206297}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: af5163de-ad7f-4dbe-b4ee-5080c604d312
+    m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1702206296}
+        m_TargetAssemblyTypeName: GravityManipulator, Assembly-CSharp
+        m_MethodName: OnGravitySelect
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 38a2c9a7-3a11-40a5-834f-dc69d5fe60cc
+    m_ActionName: Player/GravitySelect[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1702206296}
+        m_TargetAssemblyTypeName: GravityManipulator, Assembly-CSharp
+        m_MethodName: OnGravityApply
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ee13be0d-fce9-4ef7-a6d7-dd6e6d812a1a
+    m_ActionName: Player/GravityApply[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1702206297}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 44f5a853-37be-4915-8642-b4bd002b6452
+    m_ActionName: Player/Zoom[/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f64f029f-6cfd-4dbf-a217-14a6c3dcfe2e
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9e07a52b-11be-40dc-9671-9dca59f65f73
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e87d48f4-052b-4ea8-89a3-8a3b8866e853
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 05e50d2b-73fa-435f-a1cb-97ab0f28919b
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position,/Touchscreen/touch0/position,/Touchscreen/touch1/position,/Touchscreen/touch2/position,/Touchscreen/touch3/position,/Touchscreen/touch4/position,/Touchscreen/touch5/position,/Touchscreen/touch6/position,/Touchscreen/touch7/position,/Touchscreen/touch8/position,/Touchscreen/touch9/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4743e1fe-9946-42ad-b1b5-aa687b32f18f
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip,/Touchscreen/touch0/press,/Touchscreen/touch1/press,/Touchscreen/touch2/press,/Touchscreen/touch3/press,/Touchscreen/touch4/press,/Touchscreen/touch5/press,/Touchscreen/touch6/press,/Touchscreen/touch7/press,/Touchscreen/touch8/press,/Touchscreen/touch9/press]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5751b337-0746-4760-b273-55268458de4f
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 442c1140-5140-406e-8e8b-31625e4f79dc
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 486ceb2a-62a5-4a77-9e7e-eba781d7a0e8
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2538cf98-5ce4-4061-bc07-082e41938ca6
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5191b318-072b-4c66-ba43-b86b56ef8ac2
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -4706,7 +4894,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 754127425}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
