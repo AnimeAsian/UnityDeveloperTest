@@ -44,7 +44,14 @@ public class GravityManipulator : MonoBehaviour
         currentGravityVector = Vector3.down;
     }
 
-    // ---------------- INPUT ----------------
+    private void Update()
+    {
+        UpdateRotation();
+    }
+    private void FixedUpdate()
+    {
+        rb.AddForce(currentGravityVector * gravityForce, ForceMode.Acceleration);
+    }
 
     public void OnGravitySelect(InputAction.CallbackContext context)
     {
@@ -76,7 +83,6 @@ public class GravityManipulator : MonoBehaviour
             playerCamera.SetCameraLock(true);
     }
 
-    // ---------------- ROTATION ----------------
 
     private void StartRotation(GravityDir dir)
     {
@@ -108,27 +114,6 @@ public class GravityManipulator : MonoBehaviour
         isRotating = true;
     }
 
-    private Vector3 GetPreviewGravity(GravityDir dir)
-    {
-        switch (dir)
-        {
-            case GravityDir.Forward:
-                return transform.forward;
-
-            case GravityDir.Backward:
-                return -transform.forward;
-
-            case GravityDir.Left:
-                return -transform.right;
-
-            case GravityDir.Right:
-                return transform.right;
-
-            default:
-                return -transform.up;
-        }
-    }
-
     private void UpdateRotation()
     {
         if (!isRotating) return;
@@ -152,6 +137,27 @@ public class GravityManipulator : MonoBehaviour
                 playerCamera.ResetPlanarDirection();
                 playerCamera.ResetVerticalAngle();
             }
+        }
+    }
+
+    private Vector3 GetPreviewGravity(GravityDir dir)
+    {
+        switch (dir)
+        {
+            case GravityDir.Forward:
+                return transform.forward;
+
+            case GravityDir.Backward:
+                return -transform.forward;
+
+            case GravityDir.Left:
+                return -transform.right;
+
+            case GravityDir.Right:
+                return transform.right;
+
+            default:
+                return -transform.up;
         }
     }
 
@@ -195,17 +201,5 @@ public class GravityManipulator : MonoBehaviour
         euler.z = Mathf.Round(euler.z / 90f) * 90f;
 
         transform.eulerAngles = euler;
-    }
-
-    // ---------------- UPDATE ----------------
-
-    private void FixedUpdate()
-    {
-        rb.AddForce(currentGravityVector * gravityForce, ForceMode.Acceleration);
-    }
-
-    private void Update()
-    {
-        UpdateRotation();
     }
 }
